@@ -1,1 +1,1 @@
-# calculator
+# Calculator web application
