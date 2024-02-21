@@ -5,5 +5,65 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
 }
 
+.calculator {
+    background: #fff;
+    width: 400px;
+    border-radius: 14px;
+    box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.7);
+}
+
+/* Style for the Display of the calculator */
+.calculator-display {
+    background: #000;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 12px 12px 0 0;
+}
+
+.calculator-display h1{
+    margin: 0;
+    padding: 25px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    overflow-x: auto;
+}
+
+/* Style for the custom scorllbar (in case there's a big number in the display) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+    
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} 
+
+/* Buttons layout style*/
+.calculator-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.equal-sign {
+    grid-column: -2;
+    grid-row: 2 / span 4;
+}
