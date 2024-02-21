@@ -102,7 +102,7 @@ button:focus {
 }
 
 .equal-sign {
-    background: #27ae60;
+    background: #6ab04c;
     grid-column: -2;
     grid-row: 2 / span 4;
 }
